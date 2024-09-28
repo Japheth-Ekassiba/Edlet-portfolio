@@ -1,0 +1,33 @@
+.sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  height: 0;
+  width: 100%;
+  background: rgba(var(--bg-secondary-rgb),0.8);
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  transition: var(--transition);
+  overflow: hidden;
+}
+.sidebar.visible{
+  height: 100%;
+}
+.sidebar .sidebar__wrapper{
+  padding: 1rem;
+}
+.sidebar .top{
+  justify-content: space-between;
+}
+.sidebar .navitem{
+  display: block;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.sidebar .navitem:hover{
+  color: var(--color-primary);
+}
