@@ -13,7 +13,18 @@
   backdrop-filter: blur(50px);
   border: var(--gray-border);
 }
-
+#navbar.drop{
+  position: fixed;
+  animation: drop 1s;
+}
+@keyframes drop{
+  0%{
+    top: -100%;
+  }
+  100%{
+    top: 20px;
+  }
+}
 #navbar .nav__routes{
   align-items: center;
   gap: 30px;

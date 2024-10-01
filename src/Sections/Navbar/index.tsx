@@ -6,15 +6,17 @@ import ThemeToggle from "../../Components/ThemeToggle"
 import { TiThMenu } from "react-icons/ti"
 import Sidebar from "../../Components/Sidebar"
 import { useState } from "react"
+import useNavbar from "../../hook/useNavbar"
 
 const Navbar = () => {
+  const {showNavbar} = useNavbar();
   const [openSidebar, setOpenSidebar] = useState(false);
   return (
     <>
       <Sidebar 
       openSidebar={openSidebar}
       onClose={() => setOpenSidebar(!openSidebar)}/>
-      <nav id="navbar" className="flex__center">
+      <nav id="navbar" className={`flex__center ${showNavbar ? "drop" : ""}`}>
         <Logo />
         <div className="flex nav__routes">
           {

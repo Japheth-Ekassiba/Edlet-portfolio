@@ -1,0 +1,33 @@
+.points{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1rem;
+  background: rgba(var(--bg-base-rgb),0.5);
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  padding: 2rem;
+  border-radius: var(--radius-2);
+}
+.points .flex{
+  align-items: center;
+  gap: 5px;
+}
+.points .spotlight{
+  width: 40%;
+  height: 90px;
+  right: 0;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 600px){
+  .points {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .points .flex{
+    justify-content: center;
+  }
+  .points .text__muted{
+    font-size: 10px;
+    text-align: center;
+  }
+}

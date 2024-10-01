@@ -1,0 +1,30 @@
+.code__block{
+  border-radius: var(--radius-3);
+  box-shadow: var(--border-shadow);
+  overflow: hidden;
+  height: fit-content;
+}
+.code__block .dot__container{
+  height: 50px;
+  justify-content: flex-start;
+  padding: 0 20px;
+  border-bottom: var(--gray-border);
+  border-width: 0.5px;
+  background: rgba(var(--bg-secondary-rgb), 0.6);
+}
+.code__block .dot{
+  width: 0.7rem;
+  height: 0.7rem;
+  min-height: 0.7rem;
+  min-width: 0.7rem;
+  max-width: 0.7rem;
+  max-height: 0.7rem;
+  border-radius: var(--radius-5);
+  background: var(--success);
+}
+.code__block .dot:nth-child(1){
+  background: var(--danger);
+}
+.code__block .dot:nth-child(2){
+  background: var(--warning);
+}

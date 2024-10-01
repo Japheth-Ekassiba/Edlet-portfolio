@@ -1,0 +1,101 @@
+#contact> .container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 30px;
+}
+#contact .box{
+  background: var(--bg-secondary);
+  box-shadow: var(--border-shadow);
+  border-radius: var(--radius-3);
+  position: relative;
+  overflow: hidden;
+}
+#contact .box:nth-child(1){
+  margin-bottom: 30px;
+}
+#contact .box:nth-child(2){
+  background-image: url("../../assets/bg2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#contact .cluster{
+  padding: 20px;
+  z-index: 2;
+}
+#contact .cluster .description{
+  margin: 20px 0;
+}
+#contact .list__ui{
+  position: absolute;
+  z-index: 1;
+  right: -10px;
+  bottom: -10px;
+  width: 50%;
+  height: auto;
+}
+#contact .option{
+  background: rgba(var(--bg-secondary-rgb),0.8);
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: var(--radius-3);
+  margin: 10px 0;
+}
+#contact .option:hover .icon__container{
+  transform: scale(1.1);
+  color: var(--text-color);
+}
+#contact .contact__form{
+  padding: 20px;
+  width: 100%;
+  background: var(--bg-secondary);
+  box-shadow: var(--border-shadow);
+  border-radius: var(--radius-3);
+  overflow: hidden;
+  position: relative;
+}
+#contact .spotlight{
+  width: 170px;
+  height: 100px;
+  right: 0;
+  bottom: -30px;
+}
+#contact .row{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+#contact .control{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: var(--radius-2);
+  font-size: 15px;
+  overflow: hidden;
+  transition: var(--transition);
+  border: var(--gray-border);
+  border-color: var(--color-primary);
+  border-width: 2px;
+  resize: none;
+  height: 50px;
+  background: transparent;
+}
+#contact .control:focus{
+  border-color: var(--color-primary-light);
+  background: rgba(var(--bg-base-rgb),0.5);
+}
+#contact textarea.control{
+  height: 130px;
+}
+#contact .submit__btn{
+  display: block;
+  width: fit-content;
+  margin: auto;
+}
+
+/* RESPONSIVENESS */
+@media (max-width:800px){
+  #contact .container{
+    grid-template-columns: 100%;
+  }
+}
