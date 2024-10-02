@@ -42,19 +42,19 @@ export const techStack = [
 export const services = [
   {
     icon: <FiSmartphone />,
-    name: "Responsive Web Design",
+    name: "Translation and Localization",
     description: `
           Crafting visually appealing and fully responsive websites that adapt seamlessly to any device, ensuring an excellent user experience on desktops, tablets, and smartphones.`,
   },
   {
     icon: <FiCode />,
-    name: "Custom Web Development",
+    name: "Editing and Proof Reading",
     description: `
           Building dynamic, interactive web applications tailored to your specific needs, using modern frontend technologies to create scalable and maintainable solutions.`,
   },
   {
     icon: <MdOutlineDesignServices />,
-    name: "UI/UX Optimization",
+    name: "Voice Overs",
     description: `
           Enhancing user engagement with intuitive and aesthetically pleasing interfaces, prioritizing performance, accessibility, and smooth navigation for optimal user satisfaction.`,
   },
@@ -136,17 +136,17 @@ export const contactInfo = [
   {
     name: "Email",
     icon: <MdOutlineAlternateEmail />,
-    value: "mradinuba@gmail.com",
+    value: "emmanueledlet@gmail.com",
   },
   {
     name: "Phone",
     icon: <IoCallOutline />,
-    value: "+2347039681695",
+    value: "+254714672610",
   },
   {
     name: "Address",
     icon: <IoLocationOutline />,
-    value: "Gwarinpa, Abuja, Nigeria",
+    value: "Kikuyu, Nairobi, Kenya",
   },
 ];
 
